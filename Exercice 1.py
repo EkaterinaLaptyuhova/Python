@@ -18,6 +18,9 @@ cover_price = 24.95
 copies = 60
 print("If the first is a bookstore discount, total wholesale cost is",
       (cover_price*0.6-3)+(cover_price*0.6*(copies-1)-(copies-1)*0.75))
+print("If the first is shipping cost, total wholesale cost is",
+      (cover_price-3)*0.6+((cover_price*(copies-1)-(copies-1)*0.75)*0.6))
+
 
 # Exercise 2-2.3
 leave_house = 6*60+52  # in minute
