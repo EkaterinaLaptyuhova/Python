@@ -13,6 +13,12 @@ r = 5  # radius of a sphere
 V = (4 * pi * r ** 3) / 3
 print("The volume of a sphere with radius = 5 is", V)
 
+# Exercise 2-2.2
+cover_price = 24.95
+copies = 60
+print("If the first is a bookstore discount, total wholesale cost is",
+      (cover_price*0.6-3)+(cover_price*0.6*(copies-1)-(copies-1)*0.75))
+
 # Exercise 2-2.3
 leave_house = 6*60+52  # in minute
 easy_pace = 8*60+15  # in sec
