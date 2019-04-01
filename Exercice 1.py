@@ -17,14 +17,52 @@ print("The volume of a sphere with radius = 5 is", V)
 cover_price = 24.95
 copies = 60
 print("If the first is a bookstore discount, total wholesale cost is",
-      (cover_price*0.6-3)+(cover_price*0.6*(copies-1)-(copies-1)*0.75))
+      (cover_price * 0.6 - 3) + (cover_price * 0.6 * (copies - 1) - (copies - 1) * 0.75))
 print("If the first is shipping cost, total wholesale cost is",
-      (cover_price-3)*0.6+((cover_price*(copies-1)-(copies-1)*0.75)*0.6))
-
+      (cover_price - 3) * 0.6 + ((cover_price * (copies - 1) - (copies - 1) * 0.75) * 0.6))
 
 # Exercise 2-2.3
-leave_house = 6*60+52  # in minute
-easy_pace = 8*60+15  # in sec
-tempo = 7*60+12  # in sec
-time = easy_pace*2+tempo*3
+leave_house = 6 * 60 + 52  # in minute
+easy_pace = 8 * 60 + 15  # in sec
+tempo = 7 * 60 + 12  # in sec
+time = easy_pace * 2 + tempo * 3
 print('I get home at ', int((leave_house + int(time / 60)) / 60), ":", int((leave_house + int(time / 60)) % 60))
+
+
+# Exercise 3-2
+
+def print_spam():
+    print("Spam")
+
+
+def do_twice(f):
+    f()
+    f()
+
+
+do_twice(print_spam)
+
+
+# Exercise 3-3
+
+def print_first_line():
+    print("+ ", end='')
+    print("- " * 4, end='')
+    print("+ ", end='')
+    print("- " * 4, end='')
+    print("+")
+
+def print_second_line():
+    print("| ", end='')
+    print("  "*4,end='')
+    print("| ", end='')
+    print("  " * 4, end='')
+    print("|")
+
+
+print_first_line()
+for i in range(4):
+    print_second_line()
+
+
+print_first_line()
