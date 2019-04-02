@@ -3,7 +3,7 @@ import turtle
 
 bob = turtle.Turtle()
 print(bob)
-bob.speed(1)
+bob.speed(0)
 
 
 def square(t):
@@ -12,7 +12,7 @@ def square(t):
         t.lt(90)
     bob.reset()
 
-square(bob)
+# square(bob)
 
 def second_square(t, length):
     bob.speed(1)
@@ -22,7 +22,7 @@ def second_square(t, length):
     bob.reset()
 
 
-second_square(bob, 120)
+# second_square(bob, 120)
 
 
 def polygon(t, n, length):
@@ -33,4 +33,22 @@ def polygon(t, n, length):
     bob.reset()
 
 
-polygon(bob, 6, 35)
+# polygon(bob, n = 30, length = 3)
+
+
+# t = bob, n - kol-vo list'ev, length - dlins lista po pryamoi
+bob.reset()
+def first_flower(t, n, length):
+    bob.speed(0)
+    for repeat in range(n):
+        for i in range(length):
+            t.lt(1)
+            t.fd(1)
+        t.lt(180 - length)
+        for k in range(length):
+            t.lt(1)
+            t.fd(1)
+        t.rt(180 - int(360/n) + length)
+
+
+first_flower(bob, 8, 100)
