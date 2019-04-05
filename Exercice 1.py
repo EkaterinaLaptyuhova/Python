@@ -52,9 +52,10 @@ def print_first_line():
     print("- " * 4, end='')
     print("+")
 
+
 def print_second_line():
     print("| ", end='')
-    print("  "*4,end='')
+    print("  " * 4, end='')
     print("| ", end='')
     print("  " * 4, end='')
     print("|")
@@ -63,6 +64,5 @@ def print_second_line():
 print_first_line()
 for i in range(4):
     print_second_line()
-
 
 print_first_line()
