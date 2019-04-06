@@ -25,7 +25,7 @@ y = x + 1
 
 
 # Exercise 6-2
-print("Exercise 6-2")
+#print("Exercise 6-2")
 
 
 def ack(m, n):
@@ -39,4 +39,18 @@ def ack(m, n):
             return ack(m - 1, a)
 
 
-print(ack(3, 4))
+#print(ack(3, 4))
+
+
+# Exercise 6-4
+
+def is_power(a, b):
+    if (a != 0) and (a % b == 0):
+        return True
+    else:
+        return False
+
+
+a = float(input("Write a number a = "))
+b = float(input("Write a number b = "))
+print(is_power(a, b))
