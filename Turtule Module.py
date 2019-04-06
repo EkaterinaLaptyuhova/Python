@@ -36,7 +36,7 @@ def polygon(t, n, length):
 # polygon(bob, n = 30, length = 3)
 
 
-# t = bob, n - kol-vo list'ev, length - dlins lista po pryamoi
+# t = bob, n - kol-vo list'ev, length - dlina lista po pryamoi
 bob.reset()
 def first_flower(t, n, length):
     bob.speed(0)
@@ -51,4 +51,4 @@ def first_flower(t, n, length):
         t.rt(180 - int(360/n) + length)
 
 
-first_flower(bob, 8, 100)
+first_flower(bob, 18, 90)
