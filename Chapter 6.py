@@ -1,6 +1,6 @@
 # Exercise 6-1
 # print("Exercise 6-1")
-
+"""
 def b(z):
     prod = a(z, z)
     print(z, prod)
@@ -17,7 +17,7 @@ def c(x, y, z):
     square = b(total) ** 2
     return square
 
-
+"""
 x = 1
 y = x + 1
 # print(c(x, y + 3, x + y))
@@ -34,12 +34,10 @@ def ack(m, n):
     elif m > 0 and n == 0:
         return ack(m-1, 1)
     elif m > 0 and n > 0:
-        while m > 0 and n > 0:
-            a = ack(m, n-1)
-            return ack(m - 1, a)
+        return ack(m - 1, ack(m, n-1))
 
 
-#print(ack(3, 4))
+print(ack(3, 4))
 
 
 # Exercise 6-4

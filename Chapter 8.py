@@ -19,11 +19,10 @@ palindrome(text)
 
 
 def rotate_word(data, step):
-    new_text = ''
+    rotate = ''
     for letter in text:
-        rotate = chr(ord(letter) + step)
-        new_text = new_text + rotate
-    print(new_text)
+        rotate = rotate + chr(ord(letter) + step)
+    print(rotate)
 
 
 rotate_word(text, 5)
