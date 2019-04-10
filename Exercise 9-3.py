@@ -1,4 +1,4 @@
-fin = open('/Users/user/Documents/words.txt')
+fin = open('D:/words.txt')
 
 
 """
@@ -22,7 +22,7 @@ def avoid(avoid_symbols):
 
 characters = input("Write avoid symbols: ")
 avoid(characters)
-"""
+
 
 
 print("Exercise 9-5")
@@ -43,3 +43,22 @@ def uses_all(possible_symboles):
 
 possible = input("Write possible symbols: ")
 uses_all(possible)
+"""
+
+print("Exercise 9-6")
+
+# можно оформить в виде функции с входными данными в виде
+def is_abc(text):
+    for line in fin:
+        word = line.strip()
+        i = 0
+        while i < len(word) - 1:
+            if word[i] <= word[i+1]:
+                i = i + 1
+            else:
+                break
+        if i == len(word) - 1:
+            print(word)
+
+
+is_abc(fin)
