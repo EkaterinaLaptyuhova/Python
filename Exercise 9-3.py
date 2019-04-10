@@ -47,7 +47,7 @@ uses_all(possible)
 
 print("Exercise 9-6")
 
-# можно оформить в виде функции с входными данными в виде
+
 def is_abc(text):
     for line in fin:
         word = line.strip()
