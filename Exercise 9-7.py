@@ -12,6 +12,8 @@ def fun(text):
                 k = k + 1
                 if k == 3:
                     print(word)
+                if word[i] == word[i-1]:
+                    i += 1
             else:
                 i = i + 1
                 k = 0
