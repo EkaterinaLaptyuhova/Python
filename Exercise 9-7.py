@@ -28,15 +28,13 @@ def new_fun(text):
         i = 0
         count = 0
         while i < len(word) - 1:
-            while i < len(word) - 1 and word[i] == word[i+1]:
+            while i < len(word) - 1 and word[i] == word[i + 1]:
                 i = i + 1
             k = i
-            while k < len(word) - 1 and word[k] != word[k+1]:
+            count = count + 1
+            while k < len(word) - 1 and word[k] != word[k + 1]:
                 k = k + 1
-            if i + 1 == k:
-                count = count + 1
-                i = k
-            else:
+            if i + 1 != k:
                 count = 0
                 i = k
             if count == 3:
