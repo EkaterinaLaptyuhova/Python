@@ -6,11 +6,11 @@ def is_anagram(s1, s2):
 
     i = 0
     k = 0
-    while i < len(s1) - 1:
-        while k < len(s2) - 1:
+    while i <= len(s1) - 1:
+        while k <= len(s2) - 1:
             if s2[k] == s1[i]:
                 s2 = s2[ : k] + s2[k+1 : ]
-                k = len(s2) - 1
+                k = len(s2)
             else:
                 k += 1
 
@@ -24,5 +24,5 @@ def is_anagram(s1, s2):
     print("True")
 
 
-is_anagram('katya', 'akuya')
+is_anagram('katya', 'katya')
 
