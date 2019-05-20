@@ -1,22 +1,28 @@
 def is_anagram(s1, s2):
+
+    if len(s1) != len(s2):
+        print('False')
+        return False
+
     i = 0
-    if len(s1) < len(s2) or len(s1) > len(s2):
-        print("False")
-    else:
-        t1 = list(s1)
-        t2 = list(s2)
-        while i < len(t1):
-            if t1[i] == t2[0]:
-                del t1[i]
-                del t2[0]
-                i = 0
+    k = 0
+    while i < len(s1) - 1:
+        while k < len(s2) - 1:
+            if s2[k] == s1[i]:
+                s2 = s2[ : k] + s2[k+1 : ]
+                k = len(s2) - 1
             else:
-                i += 1
+                k += 1
 
-        if t2 == []:
-            print("True")
+        if len(s2) != len(s1) - (i + 1):
+            print('False')
+            return False
         else:
-            print("False")
+            k = 0
+            i += 1
+
+    print("True")
 
 
-is_anagram('katya', 'akaty')
+is_anagram('katya', 'akuya')
+
