@@ -13,4 +13,5 @@ for line in fin:
         i = i + 1
     k = k + 1
 
+
 print(i, k)
